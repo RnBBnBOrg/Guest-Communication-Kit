@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Templates — Guest Communication Kit</title>
+  <style>
+/* Governoble.online — Product Stylesheet (read-only) */
+:root {
+  --ink: #141821;
+  --ground: #faf9f7;
+  --paper: #fff;
+  --steel: #3d5a80;
+  --coral: #d96b4e;
+  --text: #1d1f24;
+  --text-muted: #5a5d63;
+  --border: #d6d3cc;
+  --code-bg: #f0efeb;
+  --quote-border: #d96b4e;
+  --quote-bg: #fdf6f3;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  --max-w: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8;
+    --ground: #111520;
+    --paper: #1a1f2e;
+    --steel: #7ba4d4;
+    --coral: #e0845f;
+    --text: #dddbd7;
+    --text-muted: #8a8d94;
+    --border: #2a2f3d;
+    --code-bg: #161b28;
+    --quote-border: #e0845f;
+    --quote-bg: #1e1a17;
+  }
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--ground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 28px 80px;
+}
+
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+h4 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 6px; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul, ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+
+blockquote {
+  border-left: 3px solid var(--quote-border);
+  background: var(--quote-bg);
+  padding: 20px 24px;
+  margin: 0 0 20px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92rem;
+  white-space: pre-line;
+}
+blockquote p { margin: 0 0 12px; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote ul, blockquote ol { margin: 8px 0 12px; padding-left: 20px; font-size: 0.92rem; }
+
+code { font-family: var(--font-mono); font-size: 0.88em; background: var(--code-bg); padding: 2px 6px; border-radius: 3px; }
+
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+
+@media print {
+  body { background: #fff; color: #000; max-width: none; padding: 0; }
+  h2 { border-bottom-color: #ccc; }
+  blockquote { background: #f9f9f9; border-left-color: #d96b4e; }
+  .product-header { border-bottom-color: #000; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+}
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>Guest Communication Kit</h1>
+  </div>
+
+  <h2>Checkout Templates</h2>
+
+  <p>Send the evening before or morning of checkout with clear, simple instructions.</p>
+
+  <hr>
+
+  <h3>Template 1: Standard Checkout Reminder</h3>
+
+  <p><strong>When to use:</strong> Evening before checkout, every booking.</p>
+
+  <blockquote>
+    <p>Hi [Guest Name],</p>
+    <p>Hope you had a wonderful stay! Just a quick reminder that checkout is tomorrow by [checkout time].</p>
+    <p><strong>Before you go:</strong></p>
+    <ul>
+      <li>[Start the dishwasher / rinse dishes]</li>
+      <li>[Take out trash to the bin at (location)]</li>
+      <li>[Turn off lights and fans]</li>
+      <li>[Lock the door — it auto-locks / use the deadbolt / etc.]</li>
+      <li>[Return keys to (location) if applicable]</li>
+      <li>[Thermostat — leave at (temp) / we'll adjust remotely]</li>
+    </ul>
+    <p><strong>No need to:</strong></p>
+    <ul>
+      <li>Strip the beds</li>
+      <li>Wash towels</li>
+      <li>Deep clean anything</li>
+    </ul>
+    <p>That's it — our cleaning team handles the rest.</p>
+    <p>If you have a moment, I'd really appreciate a review on [Airbnb / VRBO]. It makes a huge difference for small hosts like me.</p>
+    <p>Thanks for staying at [Property Name]!</p>
+    <p>[Your Name]</p>
+  </blockquote>
+
+  <hr>
+
+  <h3>Template 2: Checkout With Late Checkout Offer</h3>
+
+  <p><strong>When to use:</strong> When there's no same-day turnover and you can offer flexibility.</p>
+
+  <blockquote>
+    <p>Hi [Guest Name],</p>
+    <p>Checkout is tomorrow, and since we don't have a guest arriving right after you, you're welcome to take your time — up to [extended time, e.g., 1:00 PM] if that helps.</p>
+    <p><strong>Before you go:</strong></p>
+    <ul>
+      <li>[Same checklist as Template 1]</li>
+    </ul>
+    <p>If you'd like the late checkout, just let me know and it's yours. No extra charge.</p>
+    <p>Thanks for a great stay!</p>
+    <p>[Your Name]</p>
+  </blockquote>
+
+  <hr>
+
+  <h3>Template 3: Checkout — Same-Day Turnover</h3>
+
+  <p><strong>When to use:</strong> When the next guest arrives the same day and timing is tight.</p>
+
+  <blockquote>
+    <p>Hi [Guest Name],</p>
+    <p>Hope you had a great stay! Just a reminder that checkout is by [checkout time] tomorrow. We do have a guest arriving later in the day, so staying close to that time really helps our cleaning team.</p>
+    <p><strong>Before you go:</strong></p>
+    <ul>
+      <li>[Same checklist as Template 1]</li>
+    </ul>
+    <p>If your travel plans change and you need to leave earlier or later, just let me know as soon as possible and I'll do my best to work it out.</p>
+    <p>Thank you for being a great guest — I hope to host you again!</p>
+    <p>[Your Name]</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Tips</h2>
+
+  <ul>
+    <li><strong>Send the night before</strong>, not the morning of. Guests shouldn't wake up to a checkout task list.</li>
+    <li><strong>Keep the checklist short.</strong> 4-6 items max. If it feels like a chore list, guests resent it.</li>
+    <li><strong>Tell them what they DON'T need to do.</strong> It reduces anxiety and prevents guests from doing things incorrectly (like putting sheets in the wrong place).</li>
+    <li><strong>Ask for the review here.</strong> This is the natural moment — they're reflecting on the stay.</li>
+  </ul>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>

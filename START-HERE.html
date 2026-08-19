@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome — Guest Communication Kit</title>
+  <style>
+:root {
+  --ink: #141821; --ground: #faf9f7; --paper: #fff; --steel: #3d5a80; --coral: #d96b4e;
+  --text: #1d1f24; --text-muted: #5a5d63; --border: #d6d3cc; --code-bg: #f0efeb;
+  --quote-border: #d96b4e; --quote-bg: #fdf6f3;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --max-w: 760px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8; --ground: #111520; --paper: #1a1f2e; --steel: #7ba4d4; --coral: #e0845f;
+    --text: #dddbd7; --text-muted: #8a8d94; --border: #2a2f3d; --code-bg: #161b28;
+    --quote-border: #e0845f; --quote-bg: #1e1a17;
+  }
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-body); color: var(--text); background: var(--ground); line-height: 1.7; -webkit-font-smoothing: antialiased; max-width: var(--max-w); margin: 0 auto; padding: 48px 28px 80px; }
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul, ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+a { color: var(--steel); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--coral); }
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+.table-wrap { overflow-x: auto; margin: 0 0 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; line-height: 1.5; }
+thead th { text-align: left; font-weight: 700; padding: 10px 14px; border-bottom: 2px solid var(--steel); white-space: nowrap; }
+tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--code-bg); }
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+@media print { body { background: #fff; color: #000; max-width: none; padding: 0; } a { color: #000; } .product-header { border-bottom-color: #000; } }
+@media (max-width: 480px) { body { padding: 24px 16px 48px; } h1 { font-size: 1.5rem; } h2 { font-size: 1.2rem; } }
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>Welcome to the Guest Communication Kit</h1>
+  </div>
+
+  <p>You're 45 minutes away from a fully customized message set for your property.</p>
+
+  <p><strong>Start here:</strong> Open <a href="guides/quick-start.html">Quick-Start Guide</a> for step-by-step instructions.</p>
+
+  <hr>
+
+  <h2>What's in the box</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Folder</th><th>What's inside</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>templates/</strong></td><td>9 template sets covering every guest message from inquiry to cancellation</td></tr>
+        <tr><td><strong>prompts/</strong></td><td>7 AI prompts to customize everything for your property, platform, and voice</td></tr>
+        <tr><td><strong>guides/</strong></td><td>Quick-start guide with Airbnb/VRBO automation setup instructions</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>All files</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>File</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="templates/01-inquiry-response.html">Inquiry Response</a></td><td>3 templates for pre-booking questions</td></tr>
+        <tr><td><a href="templates/02-booking-confirmation.html">Booking Confirmation</a></td><td>3 templates for confirming reservations</td></tr>
+        <tr><td><a href="templates/03-pre-arrival.html">Pre-Arrival</a></td><td>Detailed check-in instructions and directions</td></tr>
+        <tr><td><a href="templates/04-check-in-day.html">Check-In Day</a></td><td>Day-of reminders with entry details</td></tr>
+        <tr><td><a href="templates/05-mid-stay.html">Mid-Stay</a></td><td>Check-in messages during the stay</td></tr>
+        <tr><td><a href="templates/06-checkout.html">Checkout</a></td><td>Checkout reminders and instructions</td></tr>
+        <tr><td><a href="templates/07-post-stay-review.html">Post-Stay &amp; Review</a></td><td>Thank you and review request messages</td></tr>
+        <tr><td><a href="templates/08-issue-handling.html">Issue Handling</a></td><td>Noise complaints, damage, refund requests</td></tr>
+        <tr><td><a href="templates/09-cancellation.html">Cancellation</a></td><td>Cancellation responses, no-shows, host cancellations</td></tr>
+        <tr><td><a href="prompts/message-customizer.html">AI Prompt Pack</a></td><td>7 prompts to customize templates for your property</td></tr>
+        <tr><td><a href="guides/quick-start.html">Quick-Start Guide</a></td><td>Step-by-step setup instructions</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+
+  <h2>Fastest path to done</h2>
+
+  <ol>
+    <li>Open the <a href="guides/quick-start.html">Quick-Start Guide</a></li>
+    <li>Gather your property details (address, check-in code, Wi-Fi, etc.)</li>
+    <li>Copy Prompt 1 from the <a href="prompts/message-customizer.html">AI Prompt Pack</a> into ChatGPT, Claude, or any AI tool</li>
+    <li>Fill in your property details and run it</li>
+    <li>Paste the customized messages into your platform's scheduled messages</li>
+  </ol>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>

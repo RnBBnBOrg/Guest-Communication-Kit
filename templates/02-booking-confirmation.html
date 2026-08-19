@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation Templates — Guest Communication Kit</title>
+  <style>
+/* Governoble.online — Product Stylesheet (read-only) */
+:root {
+  --ink: #141821;
+  --ground: #faf9f7;
+  --paper: #fff;
+  --steel: #3d5a80;
+  --coral: #d96b4e;
+  --text: #1d1f24;
+  --text-muted: #5a5d63;
+  --border: #d6d3cc;
+  --code-bg: #f0efeb;
+  --quote-border: #d96b4e;
+  --quote-bg: #fdf6f3;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  --max-w: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8;
+    --ground: #111520;
+    --paper: #1a1f2e;
+    --steel: #7ba4d4;
+    --coral: #e0845f;
+    --text: #dddbd7;
+    --text-muted: #8a8d94;
+    --border: #2a2f3d;
+    --code-bg: #161b28;
+    --quote-border: #e0845f;
+    --quote-bg: #1e1a17;
+  }
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--ground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 28px 80px;
+}
+
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+h4 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 6px; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul, ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+
+blockquote {
+  border-left: 3px solid var(--quote-border);
+  background: var(--quote-bg);
+  padding: 20px 24px;
+  margin: 0 0 20px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92rem;
+  white-space: pre-line;
+}
+blockquote p { margin: 0 0 12px; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote ul, blockquote ol { margin: 8px 0 12px; padding-left: 20px; font-size: 0.92rem; }
+
+code { font-family: var(--font-mono); font-size: 0.88em; background: var(--code-bg); padding: 2px 6px; border-radius: 3px; }
+
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+
+@media print {
+  body { background: #fff; color: #000; max-width: none; padding: 0; }
+  h2 { border-bottom-color: #ccc; }
+  blockquote { background: #f9f9f9; border-left-color: #d96b4e; }
+  .product-header { border-bottom-color: #000; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+}
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>Guest Communication Kit</h1>
+  </div>
+
+  <h2>Booking Confirmation Templates</h2>
+
+  <p>Send immediately after a guest books to set the tone and confirm next steps.</p>
+
+  <hr>
+
+  <h3>Template 1: Standard Booking Confirmation</h3>
+
+  <p><strong>When to use:</strong> Any new booking. Send within a few hours of the reservation.</p>
+
+  <blockquote>
+    <p>Hi [Guest Name],</p>
+    <p>Thanks for booking [Property Name] — excited to host you!</p>
+    <p><strong>Your stay:</strong></p>
+    <ul>
+      <li>Check-in: [Date], [Time]</li>
+      <li>Checkout: [Date], [Time]</li>
+      <li>Guests: [Number]</li>
+    </ul>
+    <p>I'll send you a detailed check-in message about [3-5 days / 1 week] before your arrival with directions, entry instructions, and everything you need to know.</p>
+    <p>In the meantime, feel free to reach out if you have any questions or need recommendations for the area.</p>
+    <p>Looking forward to your visit!</p>
+    <p>[Your Name]</p>
+  </blockquote>
+
+  <hr>
+
+  <h3>Template 2: Booking Confirmation — Longer Stay (5+ Nights)</h3>
+
+  <p><strong>When to use:</strong> Stays of a week or more where guests may need extra info about the area.</p>
+
+  <blockquote>
+    <p>Hi [Guest Name],</p>
+    <p>Thanks so much for booking [Property Name] for [number] nights — glad to have you!</p>
+    <p><strong>Your stay:</strong></p>
+    <ul>
+      <li>Check-in: [Date], [Time]</li>
+      <li>Checkout: [Date], [Time]</li>
+      <li>Guests: [Number]</li>
+    </ul>
+    <p>Since you'll be here for a bit, a few things that might be useful:</p>
+    <ul>
+      <li><strong>Groceries:</strong> [Nearest grocery store and approximate distance]</li>
+      <li><strong>Laundry:</strong> [Washer/dryer in unit, or nearest laundromat]</li>
+      <li><strong>Wi-Fi:</strong> Full details in the check-in message, but yes — strong and reliable</li>
+    </ul>
+    <p>I'll send a complete check-in guide about a week before your arrival. Until then, don't hesitate to reach out with questions or if you'd like local recommendations.</p>
+    <p>See you soon!</p>
+    <p>[Your Name]</p>
+  </blockquote>
+
+  <hr>
+
+  <h3>Template 3: Booking Confirmation — Holiday / Peak Season</h3>
+
+  <p><strong>When to use:</strong> Bookings during holidays, festivals, or peak season when parking, traffic, or availability of local services may be different.</p>
+
+  <blockquote>
+    <p>Hi [Guest Name],</p>
+    <p>Thanks for booking [Property Name] over [holiday/event]! Great time to be in the area.</p>
+    <p><strong>Your stay:</strong></p>
+    <ul>
+      <li>Check-in: [Date], [Time]</li>
+      <li>Checkout: [Date], [Time]</li>
+    </ul>
+    <p>A couple of heads-ups since it'll be [holiday/peak season]:</p>
+    <ul>
+      <li><strong>[Traffic / Parking]:</strong> [Relevant tip, e.g., "The roads into town get busy after 10am — arriving earlier makes for a smoother drive"]</li>
+      <li><strong>[Dining]:</strong> [Relevant tip, e.g., "Restaurants book up fast — I'd recommend making reservations in advance"]</li>
+      <li><strong>[Local event info]:</strong> [If applicable, e.g., "The holiday market runs all weekend on Main Street, a 5-minute walk from the property"]</li>
+    </ul>
+    <p>I'll send full check-in details closer to your arrival. Let me know if you have any questions!</p>
+    <p>[Your Name]</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Tips</h2>
+
+  <ul>
+    <li><strong>Send the same day</strong> they book. A quick confirmation builds trust immediately.</li>
+    <li><strong>Keep it short.</strong> They just booked — they don't need a novel. Save the details for the pre-arrival message.</li>
+    <li><strong>Set expectations.</strong> Telling them when to expect check-in details reduces "how do I get in?" messages later.</li>
+  </ul>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>
